@@ -1,0 +1,160 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/images_1" 
+    android:alpha="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phoneno"
+        android:textStyle="bold|italic"
+        android:typeface="serif" 
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtPhoneNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:inputType="text"
+        android:text="@string/phonetext"
+        android:textSize="18sp" 
+        android:background="#ffffff"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Message" 
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtMessage"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:inputType="text"
+        android:gravity="top"
+        android:background="#ffffff"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/btnSendSMS"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="10px"
+        android:text="@string/SendSMS"
+        android:textStyle="bold|italic"
+        android:typeface="serif"/>
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableR1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Arm" 
+        android:switchPadding="300px"
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    </TableRow>
+    <TableRow
+        android:id="@+id/tableR2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+	<Switch
+        android:id="@+id/switch2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/timing_arm" 
+        android:textOn="ON"
+        android:textOff="OFF"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    </TableRow>
+    </TableLayout>
+    
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/phone_2_g"
+                android:layout_weight="1" />
+			
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/arm_4"
+                android:layout_weight="1" />
+        </TableRow>
+
+           </TableLayout>
+            
+        <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+            <TableRow
+                android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+             <ImageButton
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/photo_2"
+                android:layout_weight="1" />
+
+             <ImageButton
+                 android:id="@+id/imageButton4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/clock_1"
+                 android:layout_weight="1" />
+  
+            </TableRow>
+        
+        </TableLayout>
+
+</LinearLayout>
+</ScrollView>

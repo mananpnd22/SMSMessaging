@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="@drawable/images_1" 
+    android:alpha="1">
+
+    <TimePicker
+        android:id="@+id/start_time"
+        style="@style/MyHolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/msgdate" />
+
+    <TextView
+        android:id="@+id/msgdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:text="Select Start Time"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <TimePicker
+        android:id="@+id/end_time"
+        style="@style/MyHolo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/msgcontent"
+        android:layout_marginTop="170dp" 
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:id="@+id/msgcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/msgdate"
+        android:layout_marginTop="170dp"
+        android:layout_marginLeft="10dp"
+        android:text="Select End Time"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/morebtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/end_time"
+        android:text="Add more time"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/setBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/morebtn"
+        android:text="Set"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/setBtn"
+        android:text="Back"
+        android:textStyle="bold|italic"
+        android:typeface="serif" />
+
+</RelativeLayout>
+</ScrollView>

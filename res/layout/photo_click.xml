@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/images_1" 
+    android:alpha="1" >
+   
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photono"
+        android:layout_marginTop="20dip"
+        android:layout_marginLeft="15dip"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Spinner android:id="@+id/spinner"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_toRightOf="@+id/txt1" 
+    android:layout_alignBaseline="@+id/txt1"         
+    android:drawSelectorOnTop="true"
+    android:prompt="@string/photono"
+    android:entries="@array/spinnerItems" />
+    
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_below="@+id/txt1"
+        android:layout_marginTop="30dip"
+        android:text="@string/photointerval"
+        android:textStyle="bold|italic"
+        android:typeface="serif"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+    <Spinner android:id="@+id/spinner1"  
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_below="@+id/spinner"
+    android:layout_toRightOf="@+id/txt2"
+    android:layout_marginLeft="10dip" 
+    android:layout_alignBaseline="@+id/txt2"             
+    android:drawSelectorOnTop="true"
+    android:prompt="@string/photoInt"
+    android:entries="@array/spinnerItems" />
+ 
+    <Button
+        android:id="@+id/btnSendSMS_p"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_marginTop="30px"
+        android:layout_marginBottom="10px"
+        android:text="@string/okbt" 
+        android:textStyle="bold|italic"
+        android:typeface="serif"/>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnSendSMS_p"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="10px"
+        android:text="@string/backbt" 
+        android:textStyle="bold|italic"
+        android:typeface="serif"/>
+</RelativeLayout>
+

@@ -1,0 +1,510 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity">
+
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/table1">
+        <TableRow
+            android:id="@+id/tableR0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+             <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:padding="10dp"
+        		android:text="Add SOS Number" 
+        		android:textColor="@color/red"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableR1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+         <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="Command" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+       
+        <TableRow
+            android:id="@+id/tableR2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="SOS,A,P1,P2,P3#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+         
+         <TableRow
+            android:id="@+id/tableR3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="Eg.: sos,a,688361,688362,688363#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+        
+    </TableLayout>
+    
+<TableLayout
+    	android:id="@+id/table2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table1">
+        <TableRow
+            android:id="@+id/tableR4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+             <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:padding="10dp"
+        		android:text="Delete SOS Number" 
+        		android:textColor="@color/red"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableR5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+         <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="Command" 
+        	android:textColor="@color/white"/>
+         </TableRow>
+       
+        <TableRow
+            android:id="@+id/tableR6"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="SOS,D,1[,2[,3]]#  or  SOS,D,P1,P2,P3#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+         
+         <TableRow
+            android:id="@+id/tableR7"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="Eg.: sos,d,1,2#  or  sos,d,688361,688362#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+      
+    </TableLayout>
+    
+<TableLayout
+    	android:id="@+id/table3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table2">
+        <TableRow
+            android:id="@+id/tableR8"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+             <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:padding="10dp"
+        		android:text="Arm/Disarm" 
+        		android:textColor="@color/red"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableR9"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+         <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="Command" 
+        	android:textColor="@color/white"/>
+         </TableRow>
+       
+        <TableRow
+            android:id="@+id/tableR10"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="ON#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+         
+         <TableRow
+            android:id="@+id/tableR11"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="OFF#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+      
+    </TableLayout>
+    
+<TableLayout
+    	android:id="@+id/table4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table3">
+        <TableRow
+            android:id="@+id/tableR12"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+             <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:padding="10dp"
+        		android:text="Set Timing Arm" 
+        		android:textColor="@color/red"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableR13"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+         <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="Command" 
+        	android:textColor="@color/white"/>
+         </TableRow>
+       
+        <TableRow
+            android:id="@+id/tableR14"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="TIMEON#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+         
+         <TableRow
+            android:id="@+id/tableR15"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="TIMEOFF#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+      
+    </TableLayout>
+    <TableLayout
+    	android:id="@+id/table5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table4">
+        <TableRow
+            android:id="@+id/tableR16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+             <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:padding="10dp"
+        		android:text="Set Number of Photography" 
+        		android:textColor="@color/red"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableR17"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+         <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="Command" 
+        	android:textColor="@color/white"/>
+         </TableRow>
+       
+        <TableRow
+            android:id="@+id/tableR18"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="PHOTOSET,time interval,num of picture#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+         
+         <TableRow
+            android:id="@+id/tableR19"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="Eg.: PHOTOSET,0,1#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableR20"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="(Note: Time interval : 0-60
+  0 : continuous shooting
+Num of picture : 1-5)" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+    </TableLayout>
+    <TableLayout
+    	android:id="@+id/table6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table5">
+        <TableRow
+            android:id="@+id/tableR21"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+             <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:padding="10dp"
+        		android:text="Set Alarm Capture" 
+        		android:textColor="@color/red"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableR22"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+         <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="Command" 
+        	android:textColor="@color/white"/>
+         </TableRow>
+       
+        <TableRow
+            android:id="@+id/tableR23"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="ALARMSET,num of picture,video record time#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+         
+         <TableRow
+            android:id="@+id/tableR24"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="Eg.: ALARMSET,3,60#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableR25"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="(Note: video record time : 0-300(s) 
+ Num of picture : 0-5 
+ if 0, no photo or no video record)" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+    </TableLayout>
+    
+     <TableLayout
+    	android:id="@+id/table7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/table6">
+        <TableRow
+            android:id="@+id/tableR26"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+             <TextView 
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentLeft="true"
+        		android:padding="10dp"
+        		android:text="Set Time period of Timing Arm" 
+        		android:textColor="@color/red"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableR27"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+         <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="Command" 
+        	android:textColor="@color/white"/>
+         </TableRow>
+       
+        <TableRow
+            android:id="@+id/tableR28"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:padding="10dp"
+        	android:text="TIME,S1,S2,S3#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+         
+         <TableRow
+            android:id="@+id/tableR29"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="Eg.: TIME,08:00-12:00,14:00-15:20,23:00-24:00#" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+        
+      <TableRow
+            android:id="@+id/tableR30"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+             <TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_alignParentLeft="true"
+        	android:layout_below="@+id/msgdate"
+        	android:padding="10dp"
+        	android:text="(Note: Format of Time period: HH:MM-HH:MM)" 
+        	android:textColor="@color/white"/>
+    
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+</ScrollView>

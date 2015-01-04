@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/images_1" 
+    android:alpha="1">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phoneno1"
+        android:textStyle="bold|italic"
+        android:typeface="serif" 
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/txtAddPhoneNo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dip"
+        android:background="#ffffff"
+        android:inputType="phone"
+        android:text="@string/phonetext"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+        <Button
+        android:id="@+id/btnAddno"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="10px"
+        android:text="@string/AddNo"
+        android:textStyle="bold|italic"
+        android:typeface="serif"/>
+
+</LinearLayout>

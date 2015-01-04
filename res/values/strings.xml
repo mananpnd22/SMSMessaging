@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Securage</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="phoneno">Enter the phone number of Recipient</string>
+    <string name="phoneno1">Enter the phone number</string>
+    <string name="Message">Message</string>
+    <string name="SendSMS">Send SMS</string>
+    <string name="phonetext"></string>
+    <string name="lbl1_txt"></string>
+    <string name="SmsReceive">SmsReceive</string>
+    <string name="Arm">Arm</string>
+    <string name="timing_arm">Timing Arm</string>
+    <string name="photono">select no. of Picture</string>
+    <string name="make_call">To make call</string>
+    <string name="imger_call">Emergency call</string>
+    <string name="photo">To click photo</string>
+    <string name="photointerval">Select Time Interval</string>
+    <string name="okbt">Set</string>
+    <string name="backbt">Back</string>
+    <string name="photoInt">Select</string>
+    <string name="title_activity_about">About</string>
+    <string name="about">Securage App Allows you to Handle your Personal Security Device.
+      It Sends/Receives Messages to/from device.  
+      \nAll Rights Reserved Securage Inc.&#169;</string>
+    <string name="menu_about">About</string>
+    <string name="menu_setting">Setting</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_message_history">Message History</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="AddNo">Add Phone Number</string>
+
+    <string-array name="spinnerItems">
+        <item>Select</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="spinnerItems1">
+        <item>Select</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="title_activity_message_history">MessageHistory</string>
+    <string name="title_activity_message_display">MessageDisplay</string>
+
+</resources>
